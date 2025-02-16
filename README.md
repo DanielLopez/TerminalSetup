@@ -1,2 +1,2 @@
-# dotfiles
-Back up of my terminal configuration.
+# Terminal Setup
+Back up configurations:

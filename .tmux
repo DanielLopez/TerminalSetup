@@ -1,1 +1,1 @@
-.tmux
+/home/daniellopez/.tmux
