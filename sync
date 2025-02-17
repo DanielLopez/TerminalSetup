@@ -4,8 +4,8 @@ echo "Syncing ....."
 mkdir -p ~/TerminalSetup/.config/nvim
 mkdir -p ~/TerminalSetup/.tmux
 
-rsync -rL ~/.config/nvim ~/TerminalSetup/.config/
-rsync -rL ~/.tmux/ ~/TerminalSetup/.tmux/
-rsync -L ~/.tmux.conf ~/TerminalSetup/
-rsync -L ~/.bashrc ~/TerminalSetup/
+rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.config/nvim ~/TerminalSetup/.config/
+rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux/ ~/TerminalSetup/.tmux/
+rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux.conf ~/TerminalSetup/
+rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.bashrc ~/TerminalSetup/
 echo "Sync Completed"
