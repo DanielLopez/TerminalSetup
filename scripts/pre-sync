@@ -1,0 +1,7 @@
+echo "Deleting Folders...."
+rm -f ~/TerminalSetup/.bashrc
+rm -rf ~/TerminalSetup/.config
+rm -rf ~/TerminalSetup/.tmux
+rm -f ~/TerminalSetup/.tmux/
+rm -f ~/TerminalSetup/.tmux.conf
+echo "Deleting Folders Completed."

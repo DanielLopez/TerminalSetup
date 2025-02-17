@@ -1,7 +1,11 @@
+sh ~/TerminalSetup/scripts/pre-sync.sh
+
+echo "Syncing ....."
 mkdir -p ~/TerminalSetup/.config/nvim
 mkdir -p ~/TerminalSetup/.tmux
 
-rsync -r ~/.config/nvim ~/TerminalSetup/.config/nvim
+rsync -r ~/.config/nvim ~/TerminalSetup/.config/
 rsync -r ~/.tmux/ ~/TerminalSetup/.tmux/
 rsync  ~/.tmux.conf ~/TerminalSetup/
 rsync  ~/.bashrc ~/TerminalSetup/
+echo "Sync Completed"
