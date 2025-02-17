@@ -1,4 +1,4 @@
-sh ~/TerminalSetup/scripts/pre-sync.sh
+sh ~/TerminalSetup/scripts/pre-sync
 
 echo "Syncing ....."
 mkdir -p ~/TerminalSetup/.config/nvim
