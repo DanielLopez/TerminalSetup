@@ -1,11 +1,11 @@
-sh ~/TerminalSetup/pre-sync
+sh ~/dotfiles/pre-sync
 
 echo "Syncing ....."
-mkdir -p ~/TerminalSetup/.config/nvim
-mkdir -p ~/TerminalSetup/.tmux
+mkdir -p ~/dotfiles/.config/nvim
+mkdir -p ~/dotfiles/.tmux
 
-rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.config/nvim ~/TerminalSetup/.config/
-rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux/ ~/TerminalSetup/.tmux/
-rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux.conf ~/TerminalSetup/
-rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.bashrc ~/TerminalSetup/
+rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.config/nvim ~/dotfiles/.config/
+rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux/ ~/dotfiles/.tmux/
+rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux.conf ~/dotfiles/
+rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.bashrc ~/dotfiles/
 echo "Sync Completed"

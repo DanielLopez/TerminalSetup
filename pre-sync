@@ -1,7 +1,7 @@
 echo "Deleting Folders...."
-rm -f ~/TerminalSetup/.bashrc
-rm -rf ~/TerminalSetup/.config
-rm -rf ~/TerminalSetup/.tmux
-rm -f ~/TerminalSetup/.tmux/
-rm -f ~/TerminalSetup/.tmux.conf
+rm -f ~/dotfiles/.bashrc
+rm -rf ~/dotfiles/.config
+rm -rf ~/dotfiles/.tmux
+rm -f ~/dotfiles/.tmux/
+rm -f ~/dotfiles/.tmux.conf
 echo "Deleting Folders Completed."

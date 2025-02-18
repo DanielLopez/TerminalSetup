@@ -117,3 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+#Starship Prompt
+eval "$(starship init bash)"
