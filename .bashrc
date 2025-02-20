@@ -123,3 +123,6 @@ eval "$(starship init bash)"
 
 #The Fuck
 eval "$(thefuck init bash)"
+
+#fzf
+eval "$(fzf --bash)"
