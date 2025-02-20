@@ -8,5 +8,6 @@ rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.config/
 rsync -rL --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux/ ~/dotfiles/.tmux/
 rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.tmux.conf ~/dotfiles/
 rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.bashrc ~/dotfiles/
+rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.gitconfig ~/dotfiles/
 rsync -L  --exclude '.git' --exclude '.github' --exclude '.gitignore' ~/.config/*.toml ~/dotfiles/.config/
 echo "Sync Completed"

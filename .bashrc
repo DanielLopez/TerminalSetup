@@ -87,14 +87,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias l='ls -CF'
-
-#Custom Alias
-alias ll="eza -la --icons"
-alias llt="eza -a --icons --tree"
-alias z="zoxide"
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -106,6 +98,11 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+# Zoxide
+if [ -f ~/.bash_zoxide ]; then
+    . ~/.bash_zoxide
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -123,7 +120,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 #Starship Prompt
 eval "$(starship init bash)"
-
 
 #The Fuck
 eval "$(thefuck init bash)"
